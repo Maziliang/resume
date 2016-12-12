@@ -747,7 +747,9 @@ html, body, .main {
 }
 
 .slide5 {
-  opacity: 0;
+  div, ul {
+    display: none;
+  }
   .bg {
     width: 100%;
     height: 100%;
@@ -817,8 +819,10 @@ html, body, .main {
     }
   }
   &#page5 {
-    opacity: 1;
-    .bg{
+    div, ul {
+      display: block;
+    }
+    .bg {
       -webkit-animation: fadeInDown .5s 1 both;
       animation: fadeInDown .5s 1 both;
     }
