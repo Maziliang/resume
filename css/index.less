@@ -244,8 +244,6 @@ html, body, .main {
     div {
       width: 100%;
       height: 100%;
-      top: 1.8rem;
-      left: .1rem;
       div {
         width: 100%;
         height: 100%;
@@ -256,15 +254,13 @@ html, body, .main {
   li:nth-child(5) {
     width: 3.5rem;
     height: 2px;
-    top: 1.6rem;
+    top: 1.4rem;
     left: 2.44rem;
     transform: rotateZ(340deg);
     z-index: 11;
     div {
       width: 100%;
       height: 100%;
-      top: 1.8rem;
-      left: .1rem;
       div {
         background: #000;
       }
@@ -400,13 +396,12 @@ html, body, .main {
     height: 2px;
     top: 1.8rem;
     left: .1rem;
+    -webkit-transform: rotateZ(340deg);
     transform: rotateZ(340deg);
     z-index: 11;
     div {
       width: 100%;
       height: 100%;
-      top: 1.8rem;
-      left: .1rem;
       div {
         width: 100%;
         height: 100%;
@@ -419,13 +414,13 @@ html, body, .main {
     height: 2px;
     top: 1.6rem;
     left: 2.44rem;
+    -webkit-transform: rotateZ(340deg);
     transform: rotateZ(340deg);
-    opacity: 1;
+    z-index: 11;
     div {
+      position: absolute;
       width: 100%;
       height: 100%;
-      top: 1.8rem;
-      left: .1rem;
       div {
         width: 100%;
         height: 100%;
@@ -438,14 +433,17 @@ html, body, .main {
     left: 1.4rem;
     width: 3.96rem;
     height: 0.96rem;
+    -webkit-transform: rotateZ(340deg);
     transform: rotateZ(340deg);
     div {
       width: 100%;
       height: 100%;
-      top: 1.3rem;
-      left: .1rem;
       font-size: 0.8rem;
       font-weight: bold;
+      div {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   &#page3 {
@@ -488,8 +486,10 @@ html, body, .main {
     }
     li:nth-child(6) {
       div {
-        -webkit-animation: fadeInLeft .5s ease 0.5s 1 both;
-        animation: fadeInLeft .5s ease 0.5s 1 both;
+        div {
+          -webkit-animation: fadeInLeft .5s ease 0.5s 1 both;
+          animation: fadeInLeft .5s ease 0.5s 1 both;
+        }
       }
     }
   }
@@ -818,8 +818,9 @@ html, body, .main {
   }
   &#page5 {
     opacity: 1;
-    animation: fadeInDown .5s 1 both;
+    -webkit-animation: fadeInDown .5s 1 both;
     .Contact-Information {
+      -webkit-animation: fadeIn 2s 1 both;
       animation: fadeIn 2s 1 both;
     }
     .imgLeft {
